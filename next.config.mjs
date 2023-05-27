@@ -10,6 +10,7 @@
 // module.exports = nextConfig
 
 export default {
+  output: "standalone",
   reactStrictMode: true,
   images: {
     unoptimized: true
