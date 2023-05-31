@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "node --loader ts-node/esm ./test/fun.test.mts"
+    "test": "ts-node --swc ./test/fun.test.cts"
   },
   "dependencies": {
     "@types/node": "20.2.4",
@@ -26,7 +26,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "great-expectations": "^1.3.0",
+    "@swc/core": "^1.3.61",
+    "great-expectations": "^1.4.0",
     "ts-node": "^10.9.1",
     "uvu": "^0.5.6"
   }
